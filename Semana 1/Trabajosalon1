@@ -1,0 +1,46 @@
+'''
+#V1= 100
+#V1 -=2 === V1= V1-2 #es lo mismo
+
+Nombre = input()
+print("Tu nombre es: ",Nombre)
+
+#Casting
+edad= -1
+añoactual= 2025
+Añodenacimiento= int(input("ingrese el año de su nacimiento: "))
+edad= añoactual-Añodenacimiento
+Print("Tienes",edad,"Años")
+print("Tienes %.6f"% edad) 
+'''
+#Actividad 1==print("Hola mundo")
+
+'''
+#Act2== Hacer una calculadora simple de numeros enteros
+
+a = int(input("ingrese el primer numero: "))
+b = int(input("ingrese el segundo numero: "))
+print("Intorduzca un numero entero: ",a)
+print ("introduzca otro numero entero: ",b)
+Suma= a + b
+resta= a - b
+multiplicacion=  a * b
+division= a / b #print("divisio= ", Fraction(decimal(a) / decimal(b)))
+#from Fraction import Fraction
+#from decimal import decimal
+print("Suma= ",Suma, "Resta= ",resta, "Multiplicacion= ",multiplicacion, "Division=", division)
+'''
+
+# if condicional:
+#    comandos
+# elif otra condicion:
+#    comandos
+# if condicional:
+#    comandos
+# elif otra condicion:
+#    comandos
+
+#Act 3==Hacer un progra que calcule Numeros factoriales
+
+num=5
+10! = 6! * 7!
