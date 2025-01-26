@@ -1,0 +1,61 @@
+"Laboratorio Semana 1"
+#"Programacion Basica"
+
+''#Ejercicio 1
+"Cual es la funcion de la memoreia secundaria en una computadora?"
+# Inciso C): Almacenar informacion durante mucho tiempo, incluso despues de ciclos de apagado y encendido.
+
+
+''#Ejercicio 2
+"Que es un Programa?"
+#una secuencia de declaraciones o sentencias que han sido diseñadas para hacer algo.
+
+
+''#Ejercicio 3
+"Cual es la diferencia entre un compilador y un interprete?"
+#El interprete lee el codigo fuente de los programas tal y como ha sido escrito por el programador, analizandolo e
+#interpretando sus instrucciones sobre la marcha, y un compilador necesita que le entregen el programa completo en
+#un fichero para ejecutar un proceso en el cual traduce el codigo fuente a codigo maquina para su ejecucion.
+
+
+''#Ejercicio 4
+"Cual de los siguientes contiene 'Codigo maquina'?"
+# Inciso a): El interprete de Python.
+
+
+''#Ejercicio 5
+"Que esta mal en el codigo?"
+# El 'primt' no es correctom deberia de ser "print".
+
+
+''#Ejercicio 6
+"En que lugar del computador queda almacenada una variable, como en este caso 'x', despues de ejecutar x = 123?"
+# Inciso b): Memoria Principal.
+
+
+''#Ejercicio 7
+"Que mostrara en pantalla el siguiente programa?: x=43, x=x+1, print(x)"
+# Inciso b): 44.
+
+
+''#Ejercicio 8
+"Explica cada uno de los siguientes conceptos usando un ejemplo de una capacidad humana:" 
+#1-.Unidad central de procesamiento: El cerebro humano, asi como un CPU, procesa instrucciones,informacion
+# , realiza calculos, toma decisiones y controla nuestras acciones.
+
+#2-.Memoria Principal: Podria ser la memoria a corto plazo, siendo la informacion que retenemos activamente 
+# mientras la usamos
+
+#3-.Memoria Secundaria: Podria ser la memoria a largo plazo, almacenando recuerdos, emociones
+# , experiencias, etc. Como un disco duro.
+
+#4-.Dispositivos de entrada: podrian ser los ojos, oidos, piel, etc. Con estos recibimos informacion como lo
+#  haria una computadora con un teclado, raton, etc.
+
+#5-.Dispositivos de salida: Pueden ser las respuestas que damos, voz, gestos, expresiones, alguna cosa o 
+# forma que nos deje mostrar informacion, como una computadora lo haria con altavoces, una pantalla, etc.
+
+
+''#Ejercicio 9
+"Como puedes corregir un 'Error de sintaxis'?"
+# Revisar el mensaje de error, verificar errores gramaticales o revisar errores comunes.
