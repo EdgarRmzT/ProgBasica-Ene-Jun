@@ -9,11 +9,11 @@ for num in range(1,Limite+1):
     else:
         impar.append(num)
 
-impresion = max(len(par),len(impar), sep='|')
+impresion = max(len(par),len(impar))
 
 for item in range(impresion):
     try:
-        print(par[item], impar[item], sep='|')
+        print(par[item], impar[item])
     except IndexError:
         try:
             v1=par[item]
