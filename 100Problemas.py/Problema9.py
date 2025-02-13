@@ -1,5 +1,6 @@
 #Generar lista de numeros pares e impares hasta un limite dado
 Limite= int(input("Ingresa un limite:"))
+
 if Limite<=0:
     print("ingrese otro valor")
     

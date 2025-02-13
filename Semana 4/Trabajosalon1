@@ -1,0 +1,35 @@
+#Busqueda lineal
+
+from random import randint
+
+x= randint(1,1000) #numero inicial y numero final , [a,b]
+
+listaP = list()
+listaN = list()
+elementos=int(input("Introduce la cantidad de elementos:"))
+
+for cont in range(0,elementos):  #de 0 a 9, no incluye el 10
+    if cont<0:
+        listaN.append(randint(1,100))        #los almacena en lista positiva o lista negativa
+    if cont>0:
+        listaP.append(randint(1,100))
+    else:
+        listaP.append(randint(0,1))
+
+listacompleta= listaN+listaP #unir las listas
+print(listacompleta)
+
+listaN.extend(listaP)    #esto tambien los une
+print(listaN)
+
+num= int(input("Introduce un numero a buscar:"))
+
+for itm in listacompleta:
+    if itm==num:
+        print("El numero se encontraba en la posicion", listacompleta.index(itm)) #El index imprime la posicion
+        break
+
+
+#Busqueda binaria
+
+##leer sobre el algoritmo de divide y venceras

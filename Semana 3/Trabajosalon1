@@ -1,0 +1,98 @@
+
+'''
+cond1=True
+while cond1 == True:
+    edad= int(input("Cual es tu edad?:"))
+    
+    if edad<18:
+       print("eres menor")
+    elif edad>=18 and edad<=60:
+     print("eres adulto")
+
+    elif edad>=60 and edad<=99:
+        print("Saca beca bienestar")
+
+    else:
+        print("Ya no puedes jugar con legos")
+    cond1= False
+
+if edad==120:
+    cond1==False
+'''
+
+'''
+#Objetos iterables
+list
+tuple
+set
+dict 
+'''
+
+#for control in objeto_iterable:
+'''
+saludos= dict()
+saludos['español:']= "Hola mundo"
+saludos['ingles:']= "Hello world"
+saludos['Fracais:']= "Bonjour Mondieu"
+saludos['Nihongo:']= "Ohayo Warudo"
+saludos['Portuges:']= "Saludo al macaco"
+
+for (idioma, saludos) in saludos.items():   #O tambien---for idioma, saludos in saludos.items()
+    print(idioma, saludos)
+
+
+estudiambre= dict()
+
+estudiambre["Nombre:"]= "Luis Gutierrez"
+estudiambre["Carrera:"]="DISI"
+estudiambre["Semestre:"]=12
+
+grupo77= dict()
+grupo77= [1208774]=estudiambre
+print(grupo77)
+'''
+
+for impar in range(1,1100,2):
+    print(impar)
+
+for impar in range(5,1100,5):
+    print(impar)
+
+primos=[1,2,3,5,7,11,13,17,19,23,29,31]
+
+for num in range(0,31):
+    if num in primos:
+        print(num)
+
+
+
+setprimos= list()
+
+setprimos.append(num for num in range(0,32)if num in primos)
+print(setprimos)
+
+
+print(num for num in primos if num % 1==0)
+
+print(range(0,10))
+
+
+###Como resolver Problema 10
+
+#Forma 1: con la palabra reservada with
+with file(ruta+nombre,modo) as variable:
+
+with open("prueba.txt","w"):
+    print("mensaje de texto, SMS 111222", file=variable)
+
+
+#Forma 2: Con variable
+
+variable= open(ruta+nombre,modo)
+
+variable= open("prueba.txt", "w")
+print("hola mundo desde korea", file=variable)
+variable.close()
+
+
+#Si se hace con el metodo 
