@@ -1,4 +1,4 @@
-#Modificar, editar y leer un archivo de texto, entre comillas ""
+#Modificar, editar y leer un archivo de texto
 
 import os
 
