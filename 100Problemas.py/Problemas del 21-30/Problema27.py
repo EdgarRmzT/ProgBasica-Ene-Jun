@@ -64,4 +64,4 @@ elif unidad_origen == 4:  # De centímetros
 else:
     print("Opción de unidad destino no válida")
     
-print(f"El resultado es: {resultado}")
+print("El resultado es:", resultado)
