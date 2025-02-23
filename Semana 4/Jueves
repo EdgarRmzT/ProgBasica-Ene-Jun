@@ -1,0 +1,47 @@
+'''
+rango(inicio=0, final<=10, pasos=1)
+rango(10)->0,1,2,3,4,5,6,7,8,9
+
+lista[i:f:s]
+
+cadena.tolower()
+cadena.replace(" ","")
+'''
+
+from random import randint
+
+import pandas as pd #generar estadistcas
+
+import matplotlib.pyplot as plt #graficos 
+
+
+
+#problema 17
+
+#pila, cola y lista enlazada
+
+#pila
+pila= list()
+
+def insertarPila(pila, elemento):
+    pila.append(elemento)
+    return pila
+
+def eliminarPila(pila):
+    elemementofinal=pila[len(pila)-1]  #ultimo elemento
+    pila.remove(elemementofinal)
+    return pila
+
+if __name__== "__main__":
+    estupida= list()
+    insertarPila(estupida,1)
+    print(estupida)
+    insertarPila(estupida,"mi pelo")
+    print(estupida)
+    insertarPila(estupida,"idiota")
+    print(estupida)
+    eliminarPila(estupida)
+    print(estupida)
+    
+    
+    

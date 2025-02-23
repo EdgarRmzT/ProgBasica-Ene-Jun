@@ -1,0 +1,37 @@
+"""
+a=int(input("Introduzca hasta donde quiere que 'b' llegue: "))
+b=1
+
+while b<a:
+    b=b+1
+    print(b)
+"""
+
+path= ""
+nombre= [""C:","users","Aula","Documents","Github","Probas-EJ25","]
+nombrecopia= nombre + " -copia"
+ext= "txt"
+
+menu1=f"""
+
+#################################### Bienvenidos a mi primer prograna con menu ####################################
+##
+##   A continuacion seleccione una de las opciones para proceder:
+##          1-.Leer Archivo
+##          2-.Escribir Archivo
+##          3-.Modificar Archivo 
+##          4-.Crear Archivo
+##          5-.Copiar Archivo
+##          6-.Definir Path Diferente "{path.split("/")[len(path.split("/"))-2]}"
+##          7-.Cambiar Extension de archivo {ext} 
+##          8-.Salir
+##
+##
+##
+##
+###################################################################################################################
+"""
+
+menu2=f"""
+
+################## Copiar archivo ##################

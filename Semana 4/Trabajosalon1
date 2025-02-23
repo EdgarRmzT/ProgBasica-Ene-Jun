@@ -8,7 +8,7 @@ listaP = list()
 listaN = list()
 elementos=int(input("Introduce la cantidad de elementos:"))
 
-for cont in range(0,elementos):  #de 0 a 9, no incluye el 10
+for cont in range(0,elementos+1):  #de 0 a 9, no incluye el 10
     if cont<0:
         listaN.append(randint(1,100))        #los almacena en lista positiva o lista negativa
     if cont>0:

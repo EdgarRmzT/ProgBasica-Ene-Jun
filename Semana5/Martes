@@ -1,0 +1,9 @@
+
+Limite= int(input("Introduzca el limite al cual quiere llegar: "))
+
+a=1
+while a<Limite+1:
+    print(a)
+    a=a+1
+    
+    
