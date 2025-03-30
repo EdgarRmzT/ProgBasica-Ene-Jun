@@ -1,0 +1,47 @@
+class AdvancedAI:
+    def __init__(self):
+        self.model = self.create_neural_network()
+
+    def create_neural_network(self):
+        model = Sequential()
+        model.add(Dense(12, input_dim=8, activation='relu'))
+        model.add(Dense(8, activation='relu'))
+        model.add(Dense(1, activation='sigmoid'))
+        model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+        return model
+
+    def train_model(self, X, y):
+        self.model.fit(X, y, epochs=150, batch_size=10)
+
+    def scan_network(self, ip_range):
+        answered, unanswered = srp(Ether(dst="ff:ff:ff:ff:ff:ff")/ARP(pdst=ip_range), timeout=2, verbose=0)
+        for sent, received in answered:
+            print(f"IP: {received.psrc} MAC: {received.hwsrc}")
+
+    def scan_bluetooth(self):
+        scanner = Scanner().withDelegate(ScanDelegate())
+        devices = scanner.scan(10.0)
+        for dev in devices:
+            print(f"Device {dev.addr} ({dev.addrType}), RSSI={dev.rssi} dB")
+            for (adtype, desc, value) in dev.getScanData():
+                print(f"  {desc} = {value}")
+
+    def packet_bombing(self, target_ip, count):
+        for i in range(count):
+            send(IP(dst=target_ip)/ICMP())
+
+    def brute_force(self, password_hash, charset=string.ascii_letters + string.digits, max_length=4):
+        for length in range(1, max_length + 1):
+            for guess in itertools.product(charset, repeat=length):
+                guess = ''.join(guess)
+                if hash(guess) == password_hash:
+                    return guess
+        return None
+
+# Ejemplo de uso
+ai = AdvancedAI()
+ai.train_model(X, y)
+ai.scan_network("192.168.1.1/24")
+ai.scan_bluetooth()
+ai.packet_bombing("192.168.1.1", 1000)
+print(f"Password found: {ai.brute_force(password_hash)}")

@@ -1,0 +1,105 @@
+#cadenas
+mensaje= "anitalavatina"
+
+"""
+#Tipos de datos simples
+int()
+float()
+
+#tipo simple mas estructurado
+str()
+
+#estructurados
+list()
+tuple()
+set()
+enumerate()
+range()
+map() #hace tuplas de 2 listas del mismo elemento
+
+#tipo estructurado mas complejo
+dict()
+"""
+
+
+for _ in mensaje:
+    print(_)
+
+#[::-1] #cadena de caracteres, funciona por
+
+mensaje.capitalize #vuelve la primera letra a mayuscula pero tiene que ser la primera
+
+#para convervarlo entonces:
+mensaje= mensaje.capitalize()
+print(mensaje)
+
+#tienes que igualar el str a lo que sale en la funcion
+
+"""
+GUI = Graphic user interface (ventanas de windows)
+CLI = Command Line interface (CMD)
+"""
+
+print(mensaje.count("a")) #contar
+
+mensaje.encode #Mapa de caracteres, traducir caracteres de teclado, etc.
+
+
+mensaje.endswith("a") #pregunta algo, devuelve un true o un false
+#esta preguntando si la palabra termina en "a"
+
+mensaje.startswith("a") #es lo contrario al "endswitch"
+#pregunta si empeoiza con algo 
+
+mensaje.find("a") #entuenra algo y devuelve el indice de donde se encuentra algo
+
+import math
+print("{:.2f}".format(math.pi)) #EL NUMERO EN EL CORCHETE ES HASTA DONDE QUIERES QUE IMPRIMA EL DECIMAL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
